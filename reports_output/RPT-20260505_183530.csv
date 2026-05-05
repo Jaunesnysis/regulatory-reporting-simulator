@@ -1,0 +1,2 @@
+trade_ref,counterparty_lei,instrument_type,asset_class,notional,currency,trade_date,settlement_date,venue,reporting_deadline,regulation,report_status
+TRD-20240501-001,SWEDSESS00LEI000001X,FX_SPOT,Foreign Exchange,1500000.0,EUR,2024-05-01,2024-05-03,XSTO,2024-05-02,EMIR,PENDING_SUBMISSION

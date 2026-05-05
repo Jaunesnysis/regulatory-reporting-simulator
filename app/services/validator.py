@@ -1,12 +1,11 @@
 from app.models.trade import Trade, TradeStatus
 from datetime import datetime, timezone
-
+from typing import Optional, Tuple
 
 VALID_CURRENCIES = {"EUR", "USD", "GBP", "SEK", "NOK", "DKK", "CHF", "JPY"}
 MIN_REPORTABLE_NOTIONAL = 10_000.0
 
-
-def validate_trade(trade: Trade) -> tuple[bool, str | None]:
+def validate_trade(trade: Trade) -> Tuple[bool, Optional[str]]:
     """
     Validates a trade against EMIR-style reporting rules.
     Returns (is_valid, error_message)
